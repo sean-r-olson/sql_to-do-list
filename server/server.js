@@ -2,8 +2,8 @@
 const express = require( 'express' );
 const app = express();
 const bodyParser = require( 'body-parser' );
-let pool = require('./modules/pool');
-pool = new pg.Pool(config);
+const pool = require('./modules/pool');
+
 
 // the pool will log when it connects to the database
 pool.on('connect', () => {
