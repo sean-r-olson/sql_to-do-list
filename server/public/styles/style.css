@@ -1,0 +1,19 @@
+h1 {
+  margin: 10px 0px 5px 20px;
+}
+
+body {
+    background-color: #F2EECB;
+  }
+
+.uncompletedTask {
+  background-color: #F2EECB;
+}
+
+.completeTask {
+    background-color: rgb(142, 178, 243) !important;
+}
+
+.addTaskInput {
+  margin: 0px 0px 5px 20px;
+}
