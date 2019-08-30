@@ -2,7 +2,23 @@
 const express = require( 'express' );
 const app = express();
 const bodyParser = require( 'body-parser' );
-const pool = require( './modules/pool' );
+let pool = require('../modules/pool.js');
+pool = new pg.Pool(config);
+
+// the pool will log when it connects to the database
+pool.on('connect', () => {
+  console.log('Postgesql connected');
+});
+
+// the pool with emit an error on behalf of any idle clients
+// it contains if a backend error or network partition happens
+pool.on('error', (err) => {
+  console.log('Unexpected error on idle client', err);
+  process.exit(-1);
+});
+
+module.exports = pool;
+
 
 // uses
 app.use( express.static( 'server/public' ) );
