@@ -25,7 +25,7 @@ OR
 - 5) Open browser, enter localhost:5000 in URL bar
 
 ## Screen Shot
-![screenshot](server/public/images/screenshot2.png)
+![screenshot](server/public/images/screenshot3.png)
 
 ## Completed Features
 - 1) Input field for user to enter task / 'add' task button 
