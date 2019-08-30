@@ -26,7 +26,7 @@ The To Do List: The Quintessential productivity tracker. Half the battle of a to
 - 5) Open browser, enter localhost:5000 in URL bar
 
 ##Screen Shot
-![Cmd + click to view screenshot:](/server/public/images/toDoListScreenshot.png)
+![screenshot](server/public/images/screenshot.png)
 
 ##Completed Features
 - 1) Input field for user to enter task / 'add' task button 
