@@ -12,6 +12,12 @@ The To Do List: The Quintessential productivity tracker. Half the battle of a to
 - 2) postgresql 
 
 ## Steps to get the development environment running.
+
+Interact with the app here: 
+https://murmuring-atoll-45664.herokuapp.com/
+
+OR 
+
 - 1) Clone/Download Repository 
 - 2) Open project in preferred code editor
 - 3) Open terminal, npm install 
