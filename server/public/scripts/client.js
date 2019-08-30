@@ -25,20 +25,18 @@ function getTasks () {
         for (let i=0; i<response.length; i++) {
             if (response[i].status === true) {
             el.append( `
-            <tr class="completeTask">
-            <td>${response[i].tasks}</td>
-            <td>${response[i].status}</td>
-            <td><button data-status="${response[i].status}" class="completeBtn" data-id="${response[i].id}">Complete Task</button></td>
-            <td><button class="deleteBtn" data-id="${response[i].id}">Delete Task</button></td>
+            <tr>
+            <td style="width: 50%" class="completeTask">${response[i].tasks}</td>      
+            <td style="width: 25%" ><button class="completeTaskBtn" disabled="disabled" data-status="${response[i].status}" class="completeBtn" data-id="${response[i].id}">TASK COMPLETE</button></td>
+            <td style="width: 25%"><button class="deleteBtn" data-id="${response[i].id}">delete task</button></td>
             </tr>
             `)
         } else {
             el.append( `
             <tr>
-            <td>${response[i].tasks}</td>
-            <td>${response[i].status}</td>
-            <td><button data-status="${response[i].status}" class="completeBtn" data-id="${response[i].id}">Complete Task</button></td>
-            <td><button class="deleteBtn" data-id="${response[i].id}">Delete Task</button></td>
+            <td style="width: 50%">${response[i].tasks}</td>
+            <td style="width: 25%"><button data-status="${response[i].status}" class="completeBtn" data-id="${response[i].id}">complete task</button></td>
+            <td style="width: 25%"><button class="deleteBtn" data-id="${response[i].id}">delete task</button></td>
             </tr>
             `
             )
@@ -94,7 +92,6 @@ function completeTask (event) {
     }).catch(function(err){
         console.log('error UPDATING:', err);
     })
-    
 }
 
 //setup DELETE request:
@@ -114,7 +111,4 @@ function deleteTask(event){
         alert( 'Error with Delete:', err );
     })
 }
-
-
-
 

@@ -1,19 +1,71 @@
 h1 {
-  margin: 10px 0px 5px 20px;
+  margin: 10px 0px 5px 15px;
+  font-family: 'Permanent Marker', cursive;
+  font-weight: bold;
 }
+
+#addTaskIn {
+  font-size: 20px;
+}
+
+#addTaskBtn {
+  font-size: 20px;
+  font-family: 'Viga', sans-serif;
+}
+
+#addTaskBtn:hover {
+  background-color: rgb(129, 170, 245);
+}
+
+.completeBtn {
+  font-family: 'Roboto', sans-serif;
+}
+
+.completeBtn:hover {
+  font-weight: bold;
+  background-color: rgb(155, 192, 155)
+}
+
+.deleteBtn {
+  font-family: 'Roboto', sans-serif;
+}
+
+.deleteBtn:hover {
+  background-color: rgb(255, 85, 85)
+}
+
+.header {
+  font-weight: bold;
+  font-size: 30px;
+  column-span: all;
+  font-family: 'Caveat Brush', cursive;}
 
 body {
     background-color: #F2EECB;
-  }
+}
 
 .uncompletedTask {
   background-color: #F2EECB;
 }
 
 .completeTask {
-    background-color: rgb(142, 178, 243) !important;
+    text-decoration: line-through red !important; 
 }
 
 .addTaskInput {
-  margin: 0px 0px 5px 20px;
+  margin: 0px 0px 0px 15px;
+}
+
+#inputDiv {
+  font-family: 'Caveat', cursive;
+}
+
+#outputDiv {
+  font-family: 'Viga', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#taskListDiv {
+  font-family: 'Caveat Brush', cursive;
 }
